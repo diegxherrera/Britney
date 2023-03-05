@@ -1,4 +1,4 @@
-# Britney
+# Britney: The lightweight text editor.
 Britney is a text editor developed in C++ that offers a sleek and user-friendly interface for writing, creating, reading, and listing files with the extension .bn. The program has been designed to provide a seamless experience to the users, whether they are beginners or advanced users.
 
 The Britney text editor has been developed with the objective of being simple and easy to use, while still offering advanced features for power users. With its intuitive interface, users can easily navigate through the program and start writing in no time. The text editor is also highly customizable, allowing users to configure various options to suit their needs.
