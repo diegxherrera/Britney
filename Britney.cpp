@@ -44,21 +44,13 @@ int main() {
         std::cout << "What do you want do? (Select with the numbers): ";
         std::cin >> check;
         std::cin.ignore();
-        std::string files[135];
         switch(check) {
             case '1':
                 whileCheck = false;
                 std::cout << "File name: ";
                 std::cin >> fileName;
                 std::cin.ignore();
-                FILE *file1;
-                char path1[1035];
-                file1 = popen("ls | grep .bn", "r");
-                while (fgets(path1, sizeof(path1)-1, file1) != NULL) {
-                    files = path1;
-                    z++;
-                }
-                if () {
+                if (true) {
                     files.open(fileName + ".bn", std::ios::out);
                     system("clear");
                     std::cout << "+---------+-------------------------------------+" << std::endl;
@@ -118,8 +110,29 @@ int main() {
             case '3':
                 break;
             case '4':
+                whileCheck = false;
+                system("clear");
+                std::cout << "\t\t+---------+-------------------------------------+" << std::endl;
+                std::cout << "\t\t\033[1m| Britney | \033[0;31mHelp file\t\t\t\t\033[0m|" << std::endl; 
+                std::cout << "\033[0m";
+                std::cout << "\t\t+---------+-------------------------------------+" << std::endl;
+                std::cout << "\t\t| \033[1m¿How it works?\033[0m\t\t\t\t|" << std::endl;
+                std::cout << "\t\t| To create a file go to the option one, insert |" << std::endl;
+                std::cout << "\t\t| a name and then write into that file. To save |" << std::endl;
+                std::cout << "\t\t| it press Ctrl + S.\t\t\t\t|" << std::endl;
+                std::cout << "\t\t| In case you want to open a file press option  |" << std::endl;
+                std::cout << "\t\t| two and select the .bn file you want to open. |" << std::endl;
+                std::cout << "\t\t| \033[1mNote\033[0m: If the .bn file does not exist it will  |" << std::endl;
+                std::cout << "\t\t| not appear, the program will only list the\t|" << std::endl;
+                std::cout << "\t\t| current directory.\t\t\t\t|" << std::endl;
+                std::cout << "\t\t+-----------------------------------------------+" << std::endl;
+                std::cout << "" << std::endl;
                 break;
             case '5':
+                whileCheck = false;
+                std::cout << "Closing Britney!";
+                std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+                system("clear");
                 break;
             default:
                 whileCheck = true;
